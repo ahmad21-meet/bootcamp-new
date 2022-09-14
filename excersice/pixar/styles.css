@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding: 0;
+    background-origin: padding-box;
+}
+.pic{
+    max-width: 910px;
+    margin:auto;
+    margin-left: 0%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+main{
+    max-width: 960px;
+    margin:auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+h1{
+    
+    font-size: 38px;
+    font-weight: lighter;
+    line-height: 47px;
+    margin:10px 0px;
+    padding: 0;
+   
+    
+
+}
+a:link { text-decoration: none; }
+
+main p {
+    font-size: 21px;
+    margin-bottom: 40px;
+    padding: 10px;
+    font-weight: lighter;
+}
+
+
+section{
+    max-width: 960px;
+    margin:auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
+section p{
+    font-size: 20;
+    font-weight: 200;
+}
