@@ -1,84 +1,76 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>my first website page</title>
+
     <style>
- 
-
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-* {
-  box-sizing: border-box;
+ .header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  background-color: paleturquoise;
+  width: 100%;
+}
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
 }
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  background-color: #f7f8fc;
-  font-family: "Roboto", sans-serif;
-  color: #10182f;
-}
-
-.card {
-  margin: 10px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  width: 300px;
-}
-.card-header img {
+ font-family: "Sofia", sans-serif;
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 100vh;
+  background-color:#000;
+  
+  display:grid;
+  place-items:center;
 }
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 20px;
-  min-height: 50px;
+img {
+  width: 30%;
+  height: 100%;
+  object-fit:cover;
+  
+  -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+  
+  transform-origin:center;
+  transform:perspective(800px) rotateY(25deg);
+  transition:0.5s;
 }
+.container {
+  max-width:600px;
+  max-height:350px;
 
-.card-body p {
-  font-size: 13px;
-  margin: 0 0 40px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:20px;
+  
 }
-
-
-
-
-
-
+.container:hover img {
+  opacity:0.3;
+}
+.container img:hover {
+  transform:perspective(800px)       rotateY(0deg);
+  opacity:1;
+}
     </style>
 </head>
 <body>
+    <div class="header">
+        <h1> my first website page</h1>
+        <p>hey this <span style="color:blue; font-weight:bold"> is my first website page </span></p>
+    </div>
     <div class="container">
-        <div class="card">
-          <div class="card-header">
-            <img src="https://universemagazine.com/wp-content/uploads/2022/05/prospects-of-ukrainian-space.jpg" alt="rover" />
-          </div>
-          <div class="card-body">
-            <h4>
-              The space 
-            </h4>
-            <p>
-              An cool view to see
-            </p>
-          
-          </div>
-        </div>
-        
-          </div>
-     </div>
-    
-   
-   
-    
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfsUx_TuXPtjoqxt1OAmuTTJyf2xdK09r3_81n7BOKsNwIuoOqSR3KmCT7JHm11BLOpY8&usqp=CAU" alt="">
+        <img src="https://s2.best-wallpaper.net/wallpaper/iphone/2002/Beautiful-sunset-sea-waves-beach-palm-trees-sun_iphone_640x1136.jpg" alt="">
+        <img src="https://i.pinimg.com/originals/17/44/7b/17447b68df3c046ac39b38a93381c8ac.jpg" alt="">
+      </div>
 </body>
 </html>

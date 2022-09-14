@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+<body style="text-align:center;">
+
+<h2>Basic Tooltip</h2>
+
+<p>Move the mouse over the text below:</p>
+
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Placeat soluta illum, blanditiis eum consequatur non tempore rem voluptas culpa necessitatibus vitae a cum consequuntur maiores asperiores voluptate. Earum, alias error.
+     <div class="tooltip">yo hover me man 
+    <span class="tooltiptext">habibi bro</span>
+  </div>
+  , Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ducimus commodi quos autem repellendus, 
+  corrupti explicabo cupiditate consequuntur fuga quisquam reprehenderit pariatur soluta non,
+   voluptatem voluptas officiis nostrum maiores,      <div class="tooltip">yo hover me man 
+    <span class="tooltiptext">habibi bro</span>
+  </div> aut sapiente qui.
+    Illo incidunt corporis esse veritatis magni voluptatem, facere corrupti sit, 
+    pariatur mollitia sed minima, voluptatum illum dignissimos autem! adipisicing elit. 
+    Tenetur, vitae commodi. Sit rem alias tempore 
+    temporibus repellendus, itaque quis suscipit..</p>
+
+</body>
+</html>

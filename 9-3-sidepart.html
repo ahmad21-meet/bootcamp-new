@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        .header {
+  background-color: orange;
+  text-align: center;
+  padding: 20px;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(221, 221, 221);
+  margin-top: 20px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+.rightcolumn {   
+  float: left;
+  width: 35%;
+}
+.leftcolumn {
+  float: right;
+  width: 65%;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+.lok{
+background-color: red;
+  width: 100%;
+  padding: 70px;
+  margin-top: 20px;
+  text-align: left;
+  margin-left: 0;
+}
+
+/* Fake image */
+.fakeimg {
+    
+  background-color: blue;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: cadetblue;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+   .rightcolumn {   
+display:none;
+  }
+
+.leftcolumn{
+  width: 100%;
+}
+}
+
+    </style>
+</head>
+<body>
+    
+<div class="header">
+    <h1>Header</h1>
+  </div>
+  
+<div class="row">
+    <div class="leftcolumn">
+      <div class="">
+        <div class="fakeimg" style="height:200px;">Image</div>
+      </div>
+   
+    </div>
+    <div class="rightcolumn">
+    
+      <div class="lok">
+        <h3>Slide</h3>
+      
+      </div>
+   
+    </div>
+  </div>
+  <div class="footer">
+    <h2>Footer</h2>
+  </div>
+
+  
+  
+    
+</body>
+</html>

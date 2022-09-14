@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+#outer {
+    width: 200px;
+    height: 200px;
+    background: darkcyan;
+    margin: 50px;
+}
+
+#inner {
+    width: 50px;
+    height: 50px;
+    background: lightgreen;
+    /* The problem is that the initial code was set to position:absolute
+    The problem is solved using position:relative wich make the position 
+    relative to the parant element initial placement */
+    position: relative;
+    top: 10px;
+}
+
+    </style>
+</head>
+<body>
+
+        <div id="outer">
+        <div id="inner"></div>
+        </div>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <action="process.php">
+    
+        <div>
+            <label for="email"> Email</label><br>
+            <input type="text" name="email" id="email">
+        </div>
+        <div>
+            <label for="password"> password</label><br>
+            <input type="text" name="password" id="password">
+        </div>
+        <br>
+        <div>
+            <label for="age"> Age</label>
+            <select name="age" id="age">
+                <option value="under 18"> under 18</option>
+                <option value=" 18+">  +18</option>
+
+            </select>
+          
+
+        </div>
+        <br>
+
+        <div>
+            <label for="message"> tell us about yourself</label><br>
+            <textarea name="message" id="message" cols="50" rows="5">
+
+            </textarea>
+        </div>
+
+        <form action="/action_page.php">
+            <input type="checkbox" id="agree" name="agree" value="accept">
+            <label for="agree"> I agree to the<em style="color:blue;             text-decoration: underline;
+                "> terms of service</em> </label><br>
+            
+            <input type="submit" value="Submit">
+          </form> 
+   
+
+    </form>
+    </action>
+    
+</body>
+</html>

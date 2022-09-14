@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+        #outer {
+    width: 200px;
+    height: 200px;
+    background: darkcyan;
+    margin: 50px;
+}
+
+#inner {
+    width: 50px;
+    height: 50px;
+    background: lightgreen;
+    /* The problem is that the initial code was set to position:absolute
+    The problem is solved using position:relative wich make the position 
+    relative to the parant element initial placement */
+    position: relative;
+    top: 10px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    /* - The problem was solved by inserting the text to a 
+    block-level elememt which makes the initial elament of 
+    the #inner div under it */
+}
+    </style>
+  </head>
+  <body>
+    <div id="outer" class="container">
+      <p>Box titles</p>
+      <div id="inner"></div>
+    </div>
+  </body>
+</html>
