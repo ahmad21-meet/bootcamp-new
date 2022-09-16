@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .contain{
+            padding: 5px;
+            display: grid;
+            grid-template-columns:repeat(8, 1fr) ;
+            grid-template-rows:repeat(6, 1fr) ;
+            grid-gap: 18px;
+
+        }
+
+        .head{
+            border-radius: 5px;
+            min-height: 130px;
+            grid-column: 1/ span 8;
+            grid-row:  1/ span 2;
+            background: aqua;
+        }
+        .menu{
+            border-radius: 5px;
+            min-height: 130px;
+            grid-column: 1/span 4;
+            grid-row:  3/ span 4;
+            background: red;
+        }
+        .right{
+            border-radius: 5px;
+            grid-column: 5/ span 4;
+            grid-row: 3/span 2;
+            background: green;
+        }
+
+        .box1{
+            border-radius: 5px;
+            grid-column: 5/span 2;
+            grid-row:  5/span 2;
+            background: black;
+        }
+        .box2{
+            border-radius: 5px;
+            grid-column: 7 /span 2;
+            grid-row:  5/span 2;
+            background: purple;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="contain">
+        <div class="head"></div>
+        <div class="menu"></div>
+        <div class="right"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+    
+</body>
+</html>

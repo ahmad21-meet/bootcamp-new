@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+
+    height: 90vh;
+    width: 99vw;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    'img1 img1 img2 img2 img2 img3 img4 img4'
+    'img1 img1 img2 img2 img2 img3 img4 img4'
+    'img5 img5 img2 img2 img2 img8 img8 img9'
+    'img5 img5 img6 img6 img7 img8 img8 img9'
+    'img5 img5 img6 img6 img13 img13 img13 img9'
+    'img10 img11 img11 img12 img13 img13 img13 img14'
+    'img10 img11 img11 img12 img13 img13 img13 img14'
+    ;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+}
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+.img7{
+    grid-area: img7;
+}
+.img8{
+    grid-area: img8;
+}
+.img9{
+    grid-area: img9;
+}
+.img10{
+    grid-area: img10;
+}
+.img11{
+    grid-area: img11;
+}
+.img12{
+    grid-area: img12;
+}
+.img13{
+    grid-area: img13;
+}
+.img14{
+    grid-area: img14;
+}
+@media(max-width:500px)
+{
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+    .container {
+      grid-template-areas: 
+        'img1 img2'
+        'img1 img2'
+        'img3 img4'
+        'img3 img4'
+        'img5 img6'
+        'img5 img6'
+        'img7 img8'
+        'img7 img8'
+        'img9 img10'
+        'img9 img10'
+        'img11 img12'
+        'img11 img12'
+        'img13 img14'
+        'img13 img14';
+    }
+}    
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="img1 box"><img src="./img/1.jpeg" alt=""></div>
+        <div class="img2 box"><img src="./img/2.jpeg" alt=""></div>
+        <div class="img3 box"><img src="./img/3.jpeg" alt=""></div>
+        <div class="img4 box"><img src="./img/4.jpeg" alt=""></div>
+        <div class="img5 box"><img src="./img/5.jpeg" alt=""></div>
+        <div class="img6 box"><img src="./img/6.jpeg" alt=""></div>
+        <div class="img7 box"><img src="./img/7.jpeg" alt=""></div>
+        <div class="img8 box"><img src="./img/8.jpeg" alt=""></div>
+        <div class="img9 box"><img src="./img/9.jpeg" alt=""></div>
+        <div class="img10 box"><img src="./img/10.jpeg" alt=""></div>
+        <div class="img11 box"><img src="./img/11.jpeg" alt=""></div>
+        <div class="img12 box"><img src="./img/12.jpeg" alt=""></div>
+        <div class="img13 box"><img src="./img/13.jpeg" alt=""></div>
+        <div class="img14 box"><img src="./img/14.jpeg" alt=""></div>
+    </div>
+    
+</body>
+</html>

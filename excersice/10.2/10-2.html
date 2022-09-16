@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.2_refactor_landing_page_FWB</title>
+
+
+    <style>
+        :root{
+            --light-color:#f4f4f4;
+            --primary-color:grey;
+            --lok-color:blue;
+        }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 100vh;
+    background: var(--primary-color) url('https://media.istockphoto.com/vectors/abstract-futuristic-gaming-background-with-modern-esport-shapes-vector-id1249648501?k=20&m=1249648501&s=612x612&w=0&h=5DZ8i8-Zj408YNg1726uFCZZOHJUPmWLVSi2FFPhgaE=')
+    no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    padding-top: 7rem;
+}
+header h1 {
+    color: var(--light-color);
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+header h2 {
+    display: none;
+    color: red;
+}
+.button {
+    display: inline-block;
+    text-decoration: none;
+    background:var(--lok-color);
+    color: white;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+footer h2 {
+    margin: 1rem;
+    margin-left: 0;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+    <h1>Welcome to my  website !</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae hic nesciunt, nulla beatae voluptatibus sequi adipisci architecto officiis. A, vel.</p>
+    <a href="#footer" class="button">Learn more</a>
+
+    <h2>This only appears when you're in landscape mode!</h2>
+    </header>
+
+</body>
+</html>

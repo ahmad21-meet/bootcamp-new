@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eze hhhhh</title>
+
+    <style>
+
+        body{
+            background: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    .wrapper {
+    margin-top: 250px;;
+    background: goldenrod;
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    height: 250px; 
+    border: 1px solid black;
+}
+
+        .box{
+            transition: all 1s ease-in-out;
+
+        }
+
+        .box:hover{
+            transform: translateX(-250px);
+        }
+
+      #slide {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: blue;
+    -webkit-animation: slide 0.3 forwards;
+    -webkit-animation-delay: 1s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="box" id="slide"></div>
+    </div>
+    
+</body>
+</html>
