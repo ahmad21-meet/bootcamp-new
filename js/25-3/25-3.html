@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const wonderWoman = {
+            name: "Diana Prince"
+            }
+            const batman = {
+            name: "Bruce Wayne"
+            }
+            const superHeroes = [wonderWoman, batman];
+
+            function printName() {
+console.log(`my name is ${this.name}`);
+}
+
+function printHeroes(heroes, printFunc) {
+    for(let i of heroes){
+      printFunc.call(i)
+   }
+}
+printHeroes(superHeroes,printName)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

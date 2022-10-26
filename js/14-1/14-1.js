@@ -6,13 +6,15 @@ return max;
 
 
 
-const mol = [2,4,6,8]
+const mol = [2,4,6,8];
+const sumof = (mol) => {
 const sum = mol.reduce((acc ,currVal) => {
     if(acc %2==0){
 return acc + currVal;
     }
-
-})
+    return acc
+}, 0)
+};
 
 
 const arr = [1, 2, 3,2 ,4, 5];

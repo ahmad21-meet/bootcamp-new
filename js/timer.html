@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            grid-template-rows: 1fr 3fr 1fr;
+        }
+        h1{
+            font-size: large;
+            font-weight: bold;
+
+        }
+        button{
+            font-size: larger;
+            background-color: aqua;
+            border: none;
+            border-radius: 20px;
+            width: 150px;
+            height: 50px;
+            
+        }
+        .cotrollers{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+            width:100%;
+            height: 100%;
+         
+        }
+    </style>
+</head>
+<body>
+<div class="main-container">
+
+    <h1>Timer</h1>
+    <p class="timer"><span id="sec"> 00</span>: <span id="min">00</span>: <span id="hour"> 00</span></p>
+    <div class="controllers"> 
+    <button id="start"> start</button>
+    <button id="stop"> stop </button>
+</div>
+</div>
+    
+
+<script>
+    const start = document.querySelector('#start');
+    const stop = document.querySelector('#stop');
+    const timer = document.querySelector('.timer');
+    const appendseconds = document.querySelector('#sec');
+    const appendmen = document.querySelector('#min');
+    const appendhours = document.querySelector('#hour');
+
+
+    let sec = 00;
+    let min = 00;
+    let hour = 00;
+    
+    const start_timer = function(){
+        start =setInterval(() =>{
+            if(sec<60){
+                sec++
+            }
+            if(sec==60){
+                min++
+            }
+            if(min ==60){
+                hour++;
+            }
+        },1000)
+    }
+       
+  
+    
+
+
+
+
+    </script>
+
+</body>
+</html>

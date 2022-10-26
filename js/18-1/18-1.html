@@ -1,0 +1,66 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible"
+content="IE=edge" />
+<meta name="viewport"
+content="width=device-width,
+initial-scale=1.0" />
+<title>Document</title>
+</head>
+<body>
+<h1>Header</h1>
+<p>Paragraph</p>
+<a href="#">link</a>
+<img src="" alt="" />
+<div class="x">Div with a class</div>
+<div id="y">lecpo</div>
+<input type="text" />
+<input type="text" />
+<input type="text" />
+</body>
+<script>
+    
+    const lek = document.getElementById("y");
+    console.log(lek.innerHTML);
+    const lol = document.getElementsByTagName("h1");
+    console.log(lol);
+    const lol1 = document.getElementsByTagName("p");
+    console.log(lol1);
+    const lol2 = document.getElementsByTagName("a");
+    console.log(lol2); 
+   const lol3 = document.getElementsByTagName("img");
+    console.log(lol3);
+    const lol4 = document.getElementsByTagName("div");
+    console.log(lol4);
+    const lol5 = document.getElementsByTagName("text");
+    console.log(lol5);
+    
+    const lol6 = document.getElementsByClassName('x');
+    console.log(lol6);
+
+
+
+    const lek1 = document.querySelector('#y');
+    console.log(lek1.innerHTML);
+    const rock = document.querySelector('h1')
+    console.log(rock);
+    const rock1 = document.querySelector('p')
+    console.log(rock1);
+    const rock2 = document.querySelector('a')
+    console.log(rock2);
+    const rock3 = document.querySelector('img')
+    console.log(rock3);
+    const rock5 = document.querySelectorAll('div')
+    console.log(rock5);
+
+
+
+    const inputsQuery = document.querySelectorAll('input');
+    const arr = [...inputsQuery];
+
+    arr.forEach(el=>console.log(el))
+
+    </script>
+</html>

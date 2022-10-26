@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The textarea element</h1>
+
+<form action="">
+  <p><label for="w3review">why are you interested in this position?</label></p>
+  <textarea id="review"  type="textarea" name="review" rows="4" cols="50"></textarea>
+  <br>
+  <button > click me </button>
+</form>
+
+
+<script> 
+const btn = document.querySelector('button');
+const d =document.querySelector('textarea[type="textarea"]');
+
+const msg = ()=>{
+    if(d.value.length < 10){
+        alert("at least 100 char");
+
+    }
+
+    else {
+        alert("every thing is good")
+    }
+}
+btn.addEventListener('click',msg);
+
+</script>
+</body>
+</html>

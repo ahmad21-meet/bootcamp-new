@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The Psychic Game</h1>
+    <p>Guess what letter I'm thinking of! Press any letter to begin.</p>
+    <p>The right answer is between A to Z.</p>
+    <div id="currentSituation"></div>
+
+
+
+    <script> 
+        const possibleAnswers = ['a','b','c','d','e','f','g','h','i',
+      'j','k','l','m','n','o','p', 'q','r',
+      's','t','u','v','w','x','y','z'];
+
+      let win= 0;
+      let lose =0;
+      let chance = 9;
+      let guesses = [];
+
+
+      function getNewAnswer(){
+        let random_x= Math.floor(Math.random() * possibleAnswers.length);
+        return possibleAnswers[random_x]
+      
+
+      let answer = getNewAnswer();
+      document.addEventListener("keydown" , processGuess);
+
+      function processGuess(event){
+        const user_gues = event.key.toLowercase();
+        
+        if(/^[a-z]+$/.test(user_gues) && guesses.indexof(user_gues) == -1){
+            guesses.push(user_gues);
+
+            if(user_gues ===answer){
+                win++;
+                chance =9;
+                guesses.length = 0;
+                alert(`That's right! The letter is ${answer}`);
+                answer = getNewAnswer();
+            } else if(chance ===1){
+                lose++;
+                chance =9;
+                guesses.length =0;
+                alert(`Whoops you lose! The correct letter is ${answer}`);
+                answer = getNewAnswer();
+                } else if (user_gues !==a){
+                    alert(`Not ${userGuess}! Try again`);
+          chances--;
+        }
+
+        
+        let html = `<p>Your previous choice(s): </p> 
+          <p> ${guesses.join(", ")} </p> 
+          <p>wins: ${wins} </p> 
+          <p>losses: ${losses} </p> 
+          <p>chances left: ${chances} </p>`;
+        document.querySelector("#currentSituation").innerHTML = html;
+                }
+        }
+    }
+      
+
+      
+    
+    </script>
+</body>
+</html>

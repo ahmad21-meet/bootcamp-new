@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+<script src="./script.js" defer></script>
+</head>
+<body>
+<ul>
+<li>title 1</li>
+<li class="start-here">title 2</li>
+<li>
+<ul>
+<li>sub title 1</li>
+<li>sub title 2</li>
+<li>sub title 3</li>
+</ul>
+</li>
+<li>title 3</li>
+</ul>
+<div>
+<p>Hello World!</p>
+</div>
+
+
+
+
+<script> 
+const lec = document.querySelector('.start-here');
+
+lec.textContent = "Main title"
+
+const subtitle4 = document.createElement('li');
+   const text_node = document.createTextNode("sub title 4");
+   subtitle4.appendChild(text_node);
+   lec.nextElementSibling.firstElementChild.appendChild(subtitle4);
+
+
+   lec.parentElement.removeChild(lec.parentElement.lastElementChild)
+
+
+   const tit = document.querySelector('title');
+   tit.innerHTML = "master of the dom"
+
+
+
+   const titss = document.querySelector('p');
+   titss.innerHTML = "yo man lets play a nice game"
+</script>
+</body>
+</html>

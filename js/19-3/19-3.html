@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .inputbox {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+        input[type="submit"] {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem 0;
+            padding: 0rem 2rem;
+            background: #000;
+            color: #fff;
+            font-size: 20px;
+        }
+        .tomid{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Text to copy:<br>123456</h1>
+    <div>
+        <div>
+            <input class="inputbox" type="text" maxlength="1">
+            <input class="inputbox" type="text" maxlength="1">
+            <input class="inputbox" type="text" maxlength="1">
+            <input class="inputbox" type="text" maxlength="1">
+            <input class="inputbox" type="text" maxlength="1">
+            <input class="inputbox" type="text" maxlength="1">
+        </div>
+        <div class="tomid"><input id="submitBtn" type="submit"></div>
+    </div>
+
+
+
+
+    <script>
+
+        let lec = document.querySelectorAll('.inputbox');
+        const sub = document.querySelector('#submitBtn');
+
+        lec[0].focus();
+        for(let i = 0 ; i< lec.length-1; i++){
+            lec[i].addEventListener('input' ,function(){
+                lec[i+1].focus();
+            })
+        }
+
+        sub.addEventListener('click' ,() =>{
+            for(let i = 0 ; i<lec.length; i++){
+                if(lec[i].value == ''){
+                    alert("fill all fields");
+                    return;
+                }
+            }
+            location.reload();
+        })
+
+        lec[lec.length-1].addEventListener('input', function(){
+            let isfilled = true;
+            for(let i =0 ; i<lec.length ; i++){
+                if(!lec[i].value){
+                    isfilled = false;
+                }
+                if(isFilled) // if all input boxes are filled then enable submit button
+                   {
+        setInterval(()=>{ 
+            location.reload();  // reload page on click of submit button
+        },1000)
+            }
+        }
+        })
+
+
+        lec[0].addEventListener('paste',(event)=>{  // add event listener to first input box
+    let pasteData = (event.clipboardData || window.clipboardData).getData('text'); // get pasted data
+    pasteData = pasteData.split(''); // split pasted data into array 
+    lec.forEach((data,index)=>{ // loop through pasted data
+        data.value = pasteData[index] || '' // assign pasted data to each input box
+    })    
+    //remove blur after pasting 
+    document.activeElement.blur();
+
+    setInterval(()=>{
+        location.reload(); 
+    },1000)
+})
+    
+
+
+
+    </script>
+</body>
+
+</html>
