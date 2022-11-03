@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1> Enter a number</h1>
+    <input class="input" type="text" id=" heb"> 
+    <button class="submit"> confirm  </button>
+    <h3 class="stam"> </h3>
+    
+
+
+
+    <script> 
+        const d = document.querySelector('input[type="text"]');
+        const btn = document.querySelector('.submit');
+        const h3 = document.querySelector('h3')
+
+    btn.addEventListener('click' ,()=>{
+        func(d.value);
+    });
+    function func(num) {
+        if(num!==''){
+            setTimeout(() =>{
+         new Promise((resolve, reject) => {
+            num >17 ? resolve("you can drive") : reject("you are too yong")})
+    
+.then((res) => h3.textContent =res)
+
+.catch((rej) => h3.textContent =rej)
+
+    },2000);
+}
+    }
+    
+
+
+    async function func (num) {
+        const result = await
+
+        function func(num) {
+        if(num!==''){
+            setTimeout(() =>{
+         new Promise((resolve, reject) => {
+            num >17 ? resolve("you can drive") : reject("you are too yong")})
+    
+.then((res) => h3.textContent =res)
+
+.catch((rej) => h3.textContent =rej)
+
+    },2000);
+}
+    }
+    }
+    
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+    <div class="table"> </div>
+    <script>
+const table = document.querySelector('.table');
+const titles = ['Name' , 'Hair' , 'Height'];
+
+const getArrofChar = async () =>{
+    const {results} = await fetchData(results[i].)
+}
+
+        const paitHead = (text) =>{
+         const heading = document.createElement('div');
+        heading.textContent = text;
+        heading.classList.add('title');
+        table.appendChild(heading);
+            }
+
+            const paintRow = (arrofData) =>{
+                const row = document.createElement('div');
+                row.classList.add("row");
+
+                arrofData.array.forEach((e) => {
+                    const cell =document.createElement('div');
+                    cell.classList.add('cell');
+                    cell.textContent = e;
+                    row.appendChild(cell);
+                });
+                table.appendChild(row)
+            }
+
+            const paintPage =  async () =>{
+                paitHead('Star wars');
+                paintRow(titles);
+                charDataArr.forEach(char =>{
+                    paintRow(char.name, char.hair , char.)
+                })
+
+            };
+            paintPage();
+
+
+            const obj = {
+                name :'bob',
+                last : 'marley',
+            };
+            const {last , name} = obj;
+    </script>
+</body>
+</html>
